@@ -1,0 +1,401 @@
+/*montserrat google font*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+/*zero padding and margin to everything, and border-box to everything so 
+it's easier to work thing arround*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*font family*/
+p, h1, h2, h3, a, li, span{
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+} 
+/*Navbar style start*/
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #24252a;
+    height: 10vh;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+     
+}
+.logo img{
+    width: 8vw;
+    min-width: 100px;
+}
+.navbar-container{
+    width: 80%;
+    display: flex;
+}
+/*Navbar links start*/
+.navbar-links{
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+}
+.navbar-links li{
+    list-style: none;
+    
+}
+.navbar-links a,
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar-links a:hover{
+    color: #FF4136;
+}
+    /*Navbar contact button start*/
+.nav-button{
+    width: 15%;
+    justify-content: center;
+}
+.nav-button a{
+    background-color: #FF4136;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px #24252a;
+}
+.nav-button a:hover{
+    background-color: #edf0f1;
+    color: #24252a;
+    text-shadow: 1px 1px #edf0f1;
+}
+.nav-button a:active{
+    padding: 4px 9px;
+
+}
+    /*Navbar contact button end*/
+/*Navbar links end*/
+
+/*Burger menu star*/
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/*burger menu end*/
+
+/*Hero part start*/
+.hero{
+    background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.4) ), url(IMG/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    padding-bottom: 20vh;
+}
+.hero-content h1, h2{
+    font-size: 5.5rem;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.hero-content h2{
+    font-size: 2.1rem;
+}
+/*Hero partr end*/
+
+/*Contact Email button start*/
+.contact-container{
+    background-color: #FF4136;
+    padding-bottom: 20px;
+
+}
+.email-link{
+    padding: 20px;
+    
+}
+.row1,
+.row2,
+.row3{
+    display: flex;
+    justify-content: center;
+    padding: 1.5vh;
+}
+.email-row1 span{
+    font-size: 2.2rem;
+    text-shadow: 1px 1px #24252a;
+}
+.email-row2 a{
+    margin: auto;
+}
+.main-link a{
+    background-color: #24252a;
+    padding: 15px 35px;
+    border-radius: 25px;
+}
+.main-link a:hover{
+    background-color: #edf0f1;
+    color: #24252a;
+}
+/*Contact Email button end*/
+
+/*projects section start*/
+.projects-heading{
+    background-color: #24252a;
+    padding: 20px;
+}
+.projects-heading h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.projects-obj{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33.3%;
+    min-height: 300px;
+    min-width: 300px;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+.projects-obj:hover{
+    cursor: pointer;
+}
+.proj-text h3:hover{
+    color: #FF4136;
+}
+.project1{
+    background-image: url(IMG/projects/project_1.jpg);
+
+}
+.project2{
+    background-image: url(IMG/projects/project_2.jpg);
+}
+.project3{
+    background-image: url(IMG/projects/project_3.jpg);
+}
+.project4{
+    background-image: url(IMG/projects/project_4.jpg);
+}
+.project5{
+    background-image: url(IMG/projects/project_5.jpg);
+}
+.project6{
+    background-image: url(IMG/projects/project_6.jpg);
+}
+.proj-text{
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: -1;
+}
+.proj-text h3{
+    text-align: center;
+}
+/*projects section end*/
+
+/*tech section style start*/
+.tech-title-container{
+    background-color: #24252a;
+    padding: 20px;
+}
+.tech-title-container h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.tech-section{
+    background-color: #24252a;
+}
+.tech-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    min-height: 200px;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.tech-container .bubbles{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #FF4136;
+    display: flex;
+    margin: 10px;
+}
+.bubbles:hover{
+    background-color: #edf0f1;
+    cursor: pointer;
+}
+.tech-1 .icon_html{
+    width: 100px;
+    margin: auto;
+}
+.tech-2 .icon_css{
+    width: 100px;
+    margin: auto;
+}
+.tech-3 .icon_js{
+    width: 100px;
+    margin: auto;
+}
+.tech-4 .icon_react{
+    width: 100px;
+    margin: auto;
+}
+/*Tech section end*/
+
+/*about section start*/
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    justify-content: space-around;
+}
+.about-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 35%;
+}
+.about-img img{
+    width: 300px;
+    border-radius: 50%;
+    
+}
+.about-text{
+    display: flex;
+    align-items: center;
+    flex-basis: 65%;
+}
+.about-text h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.about-text h2,
+.about-text p{
+    color: #000;
+}
+.about-text,
+.about-img{
+    min-width: 300px;
+}
+/*About section end*/
+
+/*footer section start*/
+footer{
+    background-color: #24252a;
+   
+}
+.rights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rights div{
+    padding: 20px;  
+}
+/*Small laptops or large tablets \ navbar fix \ start*/
+@media screen and (max-width:1024px){
+    .navbar-links{
+        display: flex;
+        width: 78%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar-container{
+        flex: 1;
+    }
+    .logo{
+        flex: 1;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .button-section{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+
+
+    }
+    .nav-button{
+        flex-basis: 100%;
+        
+    }
+    
+    .navbar-links{
+        position: absolute;
+        right: 0px;
+        top: 10vh;
+        height: 90vh;
+        background-color: #24252a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    .burger-section{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .navbar-links li{
+        opacity: 0;
+    }
+    .burger{
+        margin-right: 20px;
+        display: block;
+
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);    
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+}
+
+

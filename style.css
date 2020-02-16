@@ -22,6 +22,7 @@ nav{
     background-color: #24252a;
     height: 10vh;
     align-items: center;
+    z-index: 3;
 }
 .logo{
     width: 20%;
@@ -172,13 +173,14 @@ a{
     min-width: 300px;
     background-position: center;
     background-size: cover;
-    z-index: -2;
+    z-index: 1;
 }
 .projects-obj:hover{
     cursor: pointer;
 }
 .proj-text h3:hover{
     color: #FF4136;
+    
 }
 .project1{
     background-image: url(IMG/projects/project_1.jpg);
@@ -206,7 +208,7 @@ a{
     left: 0;
     right: 0;
     height: 100px;
-    z-index: -1;
+    z-index: 2;
 }
 .proj-text h3{
     text-align: center;

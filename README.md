@@ -8,3 +8,5 @@
  \* *The Navbar has a fixed position so it shows on the top all the time.*
 
  \* *For the layout I used Flexbox which gives the site a smooth transition between diferent screen sizes.*
+ 
+ \* *Please if you see some bad practices let me know, I appreciate the feedback, thank you.*

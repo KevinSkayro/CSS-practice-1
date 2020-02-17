@@ -323,6 +323,9 @@ footer{
         justify-content: space-around;
     }
 }
+/*small laptops or ... navbar fix \ end*/
+
+/*mobile screen & burger menu start*/
 @media screen and (max-width: 800px){
     body{
         overflow-x: hidden;
@@ -399,5 +402,5 @@ footer{
     }
 
 }
-
+/*mobile & burger menu end*/
 
